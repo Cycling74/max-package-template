@@ -2,6 +2,11 @@
 
 Basic template for Max externals made with the Max C SDK (max-base-sdk), including GitHub Actions for automated CI builds.
 
+_Make sure to run the following to update Git submodules_
+```
+git submodule update --init --recursive
+```
+
 ## Creating objects
 Objects should each be made inside a directory inside of `/source/projects/` like the example. See the max-sdk repository for examples of how to write Max objects with the C SDK.
 
