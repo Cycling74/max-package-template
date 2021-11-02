@@ -1,4 +1,4 @@
-# max-template
+# max-package-template
 
 Basic template for Max externals made with the Max C SDK (max-base-sdk), including GitHub Actions for automated CI builds.
 
