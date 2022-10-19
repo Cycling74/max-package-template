@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 
-set(CMAKE_OSX_ARCHITECTURES x86_64;arm64)  # Enable Apple silicon builds
+set(CMAKE_OSX_ARCHITECTURES x86_64;arm64 CACHE STRING "Enable Apple Silicon Builds")
 
 string(REGEX REPLACE "(.*)/" "" THIS_FOLDER_NAME "${CMAKE_CURRENT_SOURCE_DIR}")
 project(${THIS_FOLDER_NAME})
