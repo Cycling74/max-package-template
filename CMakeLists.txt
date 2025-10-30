@@ -5,6 +5,11 @@ set(CMAKE_OSX_ARCHITECTURES x86_64;arm64 CACHE STRING "Enable Apple Silicon Buil
 string(REGEX REPLACE "(.*)/" "" THIS_FOLDER_NAME "${CMAKE_CURRENT_SOURCE_DIR}")
 project(${THIS_FOLDER_NAME})
 
+option(EXPORT_COMPILE_COMMANDS "Export compile commands for LSP" ON)
+if (EXPORT_COMPILE_COMMANDS)
+    set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+endif ()
+
 MACRO(SUBDIRLIST result curdir)
     FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
     SET(dirlist "")
