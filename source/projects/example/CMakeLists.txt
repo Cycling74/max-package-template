@@ -24,4 +24,9 @@ add_library(
 	${PROJECT_SRC}
 )
 
+# note: to include third-party libraries or headers,
+# you should add target_link_library or target_include_directories commands at this point in the file
+# you can use ${PROJECT_NAME} as the target name -- the target is not defined
+# until after the add_library command
+
 include(${CMAKE_CURRENT_SOURCE_DIR}/../../max-sdk-base/script/max-posttarget.cmake)
