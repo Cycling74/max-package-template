@@ -4,7 +4,7 @@
 	"description" : "An example Max package",
 	"homepatcher" : "",
 	"max_version_min" : "8.0", "max_version_max" : "none",
-	"name" : "@C74_PACKAGE_NAME@",
+	"name" : "max-template",
 	"os" : {
 		"macintosh" : {
 			"platform" : [ "x64", "arm64" ],
@@ -20,6 +20,6 @@
 		"copyright" : "Copyright (c) 2021 Your Name"
 	},
 	"tags" : ["max", "example"],
-	"version" : "@GIT_VERSION_MAJ@.@GIT_VERSION_MIN@.@GIT_VERSION_SUB@",
+	"version" : "0.1.0",
 	"website" : "http://www.github.com/"
 }
